@@ -2,22 +2,10 @@ import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/enhanced-button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Stethoscope, Users, Calendar, Shield, Heart, Clock } from "lucide-react";
-import { supabase } from "@/integrations/supabase/client";
+import { Stethoscope, Users, Calendar, Shield, Heart, Clock, AlertCircle } from "lucide-react";
 
 const Index = () => {
   const navigate = useNavigate();
-
-  useEffect(() => {
-    // Check if user is already logged in
-    const checkAuth = async () => {
-      const { data: { session } } = await supabase.auth.getSession();
-      if (session) {
-        navigate('/dashboard');
-      }
-    };
-    checkAuth();
-  }, [navigate]);
 
   const features = [
     {
@@ -76,6 +64,19 @@ const Index = () => {
           </div>
         </div>
       </header>
+
+      {/* Supabase Setup Notice */}
+      <div className="bg-primary/10 border-l-4 border-primary p-4 m-4">
+        <div className="flex items-center">
+          <AlertCircle className="w-5 h-5 text-primary mr-3" />
+          <div>
+            <h3 className="text-sm font-medium text-primary">Database Setup Required</h3>
+            <p className="text-sm text-primary/80 mt-1">
+              Click the green Supabase button in the top-right to complete your database setup and enable full functionality.
+            </p>
+          </div>
+        </div>
+      </div>
 
       {/* Hero Section */}
       <section className="pt-20 pb-16 px-4 sm:px-6 lg:px-8">
