@@ -30,6 +30,10 @@ const Index = () => {
     }
   ];
 
+  const handleAuthNavigation = (path: string) => {
+    navigate(path);
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-secondary/20 to-primary/5">
       {/* Header */}
@@ -50,13 +54,13 @@ const Index = () => {
             <div className="space-x-4">
               <Button
                 variant="ghost"
-                onClick={() => navigate('/login')}
+                onClick={() => handleAuthNavigation('/login')}
               >
                 Sign In
               </Button>
               <Button
                 variant="medical"
-                onClick={() => navigate('/signup')}
+                onClick={() => handleAuthNavigation('/signup')}
               >
                 Get Started
               </Button>
@@ -70,9 +74,9 @@ const Index = () => {
         <div className="flex items-center">
           <AlertCircle className="w-5 h-5 text-primary mr-3" />
           <div>
-            <h3 className="text-sm font-medium text-primary">Database Setup Required</h3>
+            <h3 className="text-sm font-medium text-primary">Complete Supabase Setup Required</h3>
             <p className="text-sm text-primary/80 mt-1">
-              Click the green Supabase button in the top-right to complete your database setup and enable full functionality.
+              To enable authentication and full functionality, please complete your Supabase connection by clicking the green Supabase button in the top-right corner.
             </p>
           </div>
         </div>
@@ -96,7 +100,7 @@ const Index = () => {
               <Button
                 variant="hero"
                 size="hero"
-                onClick={() => navigate('/signup')}
+                onClick={() => handleAuthNavigation('/signup')}
                 className="animate-pulse-glow"
               >
                 <Heart className="w-5 h-5 mr-2" />
@@ -105,7 +109,7 @@ const Index = () => {
               <Button
                 variant="outline"
                 size="hero"
-                onClick={() => navigate('/login')}
+                onClick={() => handleAuthNavigation('/login')}
               >
                 Sign In to Your Account
               </Button>
@@ -172,7 +176,7 @@ const Index = () => {
               <Button
                 variant="secondary"
                 size="hero"
-                onClick={() => navigate('/signup')}
+                onClick={() => handleAuthNavigation('/signup')}
                 className="bg-background text-foreground hover:bg-background/90"
               >
                 <Users className="w-5 h-5 mr-2" />
