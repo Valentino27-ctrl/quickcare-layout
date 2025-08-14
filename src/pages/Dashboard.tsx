@@ -5,7 +5,7 @@ import { DoctorDashboard } from "@/components/dashboard/DoctorDashboard";
 import { getCurrentUser, getUserProfile, type Profile } from "@/lib/auth";
 import { useNavigate } from "react-router-dom";
 
-export default function Dashboard() {
+const Dashboard = () => {
   const [profile, setProfile] = useState<Profile | null>(null);
   const [loading, setLoading] = useState(true);
   const navigate = useNavigate();
@@ -59,4 +59,6 @@ export default function Dashboard() {
       )}
     </DashboardLayout>
   );
-}
+};
+
+export default Dashboard;
