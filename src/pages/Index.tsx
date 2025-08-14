@@ -69,18 +69,6 @@ const Index = () => {
         </div>
       </header>
 
-      {/* Supabase Setup Notice */}
-      <div className="bg-primary/10 border-l-4 border-primary p-4 m-4">
-        <div className="flex items-center">
-          <AlertCircle className="w-5 h-5 text-primary mr-3" />
-          <div>
-            <h3 className="text-sm font-medium text-primary">Complete Supabase Setup Required</h3>
-            <p className="text-sm text-primary/80 mt-1">
-              To enable authentication and full functionality, please complete your Supabase connection by clicking the green Supabase button in the top-right corner.
-            </p>
-          </div>
-        </div>
-      </div>
 
       {/* Hero Section */}
       <section className="pt-20 pb-16 px-4 sm:px-6 lg:px-8">
