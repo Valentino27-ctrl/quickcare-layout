@@ -34,8 +34,8 @@ interface Appointment {
 // Mock data for demonstration
 const mockDoctors: Doctor[] = [
   {
-    id: "1",
-    user_id: "1",
+    id: "550e8400-e29b-41d4-a716-446655440001",
+    user_id: "550e8400-e29b-41d4-a716-446655440001",
     specialization: "Cardiology",
     license_number: "MD-2024-001",
     phone: "+1 (555) 123-4567",
@@ -43,8 +43,8 @@ const mockDoctors: Doctor[] = [
     profiles: { full_name: "Dr. Sarah Johnson" }
   },
   {
-    id: "2",
-    user_id: "2",
+    id: "550e8400-e29b-41d4-a716-446655440002",
+    user_id: "550e8400-e29b-41d4-a716-446655440002",
     specialization: "Dermatology",
     license_number: "MD-2024-002",
     phone: "+1 (555) 234-5678",
@@ -52,8 +52,8 @@ const mockDoctors: Doctor[] = [
     profiles: { full_name: "Dr. Michael Chen" }
   },
   {
-    id: "3",
-    user_id: "3",
+    id: "550e8400-e29b-41d4-a716-446655440003",
+    user_id: "550e8400-e29b-41d4-a716-446655440003",
     specialization: "Orthopedics",
     license_number: "MD-2024-003",
     phone: "+1 (555) 345-6789",
@@ -61,8 +61,8 @@ const mockDoctors: Doctor[] = [
     profiles: { full_name: "Dr. Emily Rodriguez" }
   },
   {
-    id: "4",
-    user_id: "4",
+    id: "550e8400-e29b-41d4-a716-446655440004",
+    user_id: "550e8400-e29b-41d4-a716-446655440004",
     specialization: "Pediatrics",
     license_number: "MD-2024-004",
     phone: "+1 (555) 456-7890",
@@ -305,7 +305,7 @@ export const PatientDashboard = () => {
                   <Button
                     variant="medical"
                     size="sm"
-                    onClick={() => bookAppointment(doctor.user_id)}
+                    onClick={() => bookAppointment(doctor.id)}
                     className="ml-4"
                   >
                     <Plus className="w-4 h-4 mr-1" />
