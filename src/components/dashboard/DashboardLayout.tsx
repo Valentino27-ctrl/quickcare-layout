@@ -79,7 +79,7 @@ export const DashboardLayout = ({ children }: DashboardLayoutProps) => {
               </div>
               <div>
                 <h1 className="text-xl font-bold bg-gradient-primary bg-clip-text text-transparent">
-                  eClinic
+                  Quick Care
                 </h1>
                 <p className="text-xs text-muted-foreground capitalize">
                   {profile.role} Dashboard

@@ -5,7 +5,7 @@ export default function Login() {
   return (
     <AuthLayout
       title="Welcome Back"
-      description="Sign in to your eClinic account"
+      description="Sign in to your Quick Care account"
     >
       <LoginForm />
     </AuthLayout>
