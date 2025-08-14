@@ -46,7 +46,7 @@ const Index = () => {
               </div>
               <div>
                 <h1 className="text-xl font-bold bg-gradient-primary bg-clip-text text-transparent">
-                  eClinic
+                  Quick Care
                 </h1>
                 <p className="text-xs text-muted-foreground">Digital Healthcare Platform</p>
               </div>
@@ -123,7 +123,7 @@ const Index = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center space-y-4 mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground">
-              Why Choose eClinic?
+              Why Choose Quick Care?
             </h2>
             <p className="text-lg text-muted-foreground">
               Experience modern healthcare management designed for your convenience
@@ -159,7 +159,7 @@ const Index = () => {
                 Ready to Take Control of Your Health?
               </h2>
               <p className="text-xl text-primary-foreground/90 mb-8">
-                Join thousands of patients and doctors who trust eClinic for their healthcare needs.
+                Join thousands of patients and doctors who trust Quick Care for their healthcare needs.
               </p>
               <Button
                 variant="secondary"
@@ -168,7 +168,7 @@ const Index = () => {
                 className="bg-background text-foreground hover:bg-background/90"
               >
                 <Users className="w-5 h-5 mr-2" />
-                Join eClinic Today
+                Join Quick Care Today
               </Button>
             </CardContent>
           </Card>
@@ -183,11 +183,11 @@ const Index = () => {
               <Stethoscope className="w-4 h-4 text-primary-foreground" />
             </div>
             <span className="text-lg font-semibold bg-gradient-primary bg-clip-text text-transparent">
-              eClinic
+              Quick Care
             </span>
           </div>
           <p className="text-muted-foreground">
-            © 2024 eClinic. Empowering better healthcare for everyone.
+            © 2024 Quick Care. Empowering better healthcare for everyone.
           </p>
         </div>
       </footer>
